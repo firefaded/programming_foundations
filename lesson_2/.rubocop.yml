@@ -12,11 +12,11 @@ Style/MutableConstant:
 Style/GuardClause:
   Description: Check for conditionals that can be replaced with guard classes.
   StyleGuide: https://github.com/bboatsov/ruby-style-guide #no-nested-conditionals
-  Enabled: False
+  Enabled: false
   MinBodyLength: 1
 
 Style/BracesAroundHashParamenters:
-  Enabled: False
+  Enabled: false
   EnforcedStyle: no_braces
   SupportedStyles:
     # The 'braces' style enforces braces around all method parameters that are hashes
