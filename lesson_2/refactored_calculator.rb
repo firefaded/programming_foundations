@@ -71,7 +71,8 @@ loop do
       prompt("Hmm... that doesn't look like a valid number")
     end
   end
-  # <<- enables multi-line messages. MSG can be any 3 letters. also known as a deliniter
+  # <<- enables multi-line messages.
+  # MSG can be any 3 letters. also known as a deliniter
   operator_prompt = <<-MSG
     What operation would you like to perform?
     1) add
@@ -82,7 +83,7 @@ loop do
 
   prompt(operator_prompt)
 
-  # operator variabled initialized outside of loop
+  # operator variable initialized outside of loop
   operator = ""
   loop do
     operator = Kernel.gets().chomp()
@@ -102,15 +103,15 @@ loop do
 
   # use case statment to return result instead of if statements
   result = case operator
-  when "1"
-    number1.to_i() + number2.to_i()
-  when "2"
-    number1.to_i() - number2.to_i()
-  when "3"
-    result = number1.to_i() * number2.to_i()
-  when "4"
-    number1.to_f() / number2.to_f()
-  end
+           when "1"
+             number1.to_i() + number2.to_i()
+           when "2"
+             number1.to_i() - number2.to_i()
+           when "3"
+             number1.to_i() * number2.to_i()
+           when "4"
+             number1.to_f() / number2.to_f()
+           end
 
   prompt("The result is #{result}")
 
