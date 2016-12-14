@@ -15,7 +15,7 @@ Style/GuardClause:
   Enabled: false
   MinBodyLength: 1
 
-Style/BracesAroundHashParamenters:
+Style/BracesAroundHashParameters:
   Enabled: false
   EnforcedStyle: no_braces
   SupportedStyles:
